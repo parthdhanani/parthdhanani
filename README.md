@@ -1,37 +1,36 @@
 ## Parth Dhanani
 
-Senior Instructional Designer & SCORM Team Lead at [Kidvento](https://kidvento.com). Based in Mysore, India.
+Learning Engineer & SCORM Team Lead at [Kidvento](https://kidvento.com). Based in Mysore, India. Eight years in eLearning — the last year leading a team of 8 shipping 100+ K-12 SCORM packages a year.
 
-I build the tools the K-12 SCORM pipeline at Kidvento runs on. Increasingly the open-source versions of those tools live here.
-
-8 years across Kidvento, Learning Owl, Learning Lozix, and Lionbridge. Storyboard → Storyline → SCORM 1.2 → LMS, with the engineering edges (post-publish automation, adaptive video, build-time linting) treated as first-class problems.
+The tools in this repo came out of that pipeline. A freeze bug that took two days to find and ten minutes to fix became a build-time linter. A manual four-hour packaging step became a ten-minute script. A video that wouldn't play on low-bandwidth school networks became an adaptive-bitrate packager with no CDN dependency. Each one is the smallest thing that closed the gap.
 
 ### Repos worth opening
 
 | Repo | What it does |
 |---|---|
-| **[scorm-kit](https://github.com/parthdhanani/scorm-kit)** | SCORM 1.2 packaging, validation, and runtime toolkit. Catches the silent failure modes Storyline doesn't. |
-| **[storycraft](https://github.com/parthdhanani/storycraft)** | Markdown storyboard → SCORM 1.2 package builder. Live playground at [psidex.com](https://psidex.com). |
-| **[xapi-doctor](https://github.com/parthdhanani/xapi-doctor)** | CLI tool for diagnosing, linting, and testing xAPI statements against any LRS. |
+| **[scorm-kit](https://github.com/parthdhanani/scorm-kit)** | 8 subcommands: lint, a11y, diff, mock, rum, privacy, i18n, cmi5. 27/27 tests. Zero runtime deps. Catches the silent failure modes Storyline's publish step misses. |
+| **[storycraft](https://github.com/parthdhanani/storycraft)** | Markdown storyboard → SCORM 1.2 package. Same input, byte-identical zip. 11/11 tests. [Try it in the browser.](https://psidex.com/demos/storycraft/playground.html) |
+| **[xapi-doctor](https://github.com/parthdhanani/xapi-doctor)** | 25-rule xAPI 1.0.3 linter + cmi5 profile. Pings LRS endpoints, validates auth, translates 4xx/5xx into plain English. 17/17 tests. Zero deps. |
 
 ### Writing
 
-- [Cutting SCORM packaging from 4 hours to 10 minutes](https://psidex.com) — automating the post-publish pipeline
-- [Adaptive bitrate video inside a SCORM package, without a CDN](https://psidex.com)
-- [Diagnosing a mid-interaction freeze — a duplicate `cmi.interactions.N.id` story](https://psidex.com)
-- [Localising eLearning into six Indian languages](https://psidex.com)
-- [Action Mapping in practice](https://psidex.com)
-- [Working with subject-matter experts](https://psidex.com)
-- [What I think makes good eLearning](https://psidex.com)
+**Project case studies**
+- [How one freeze bug became a build pipeline — scorm-kit](https://psidex.com/case-studies/08_building_scorm_kit.html)
+- [Cutting SCORM packaging from 4 hours to 10 minutes](https://psidex.com/case-studies/01_post_publish_automation.html)
+- [Adaptive bitrate video inside a SCORM package, no CDN](https://psidex.com/case-studies/02_adaptive_video_packager.html)
+- [The mid-interaction freeze — a duplicate `cmi.interactions.N.id` story](https://psidex.com/case-studies/04_freeze_bug.html)
+
+**Essays**
+- [Localising eLearning into six Indian languages](https://psidex.com/case-studies/05_localization_lessons.html)
+- [Action Mapping in practice](https://psidex.com/case-studies/06_action_mapping_in_practice.html)
+- [Working with subject-matter experts](https://psidex.com/case-studies/07_working_with_smes.html)
 
 ### Stack
 
-JavaScript / Node · SCORM 1.2 · xAPI · cmi5 (familiar) · Articulate Storyline 360 · FFmpeg · Moodle · WCAG 2.2 AA
+JavaScript · Node.js · SCORM 1.2 · xAPI 1.0.3 · cmi5 · Articulate Storyline 360 · FFmpeg · Moodle · WCAG 2.2 AA
 
 ### Contact
 
-- Portfolio: [psidex.com](https://psidex.com)
-- LinkedIn: [linkedin.com/in/dhananiparth](https://linkedin.com/in/dhananiparth)
-- Email: parth1707ster@gmail.com
+Portfolio: [psidex.com](https://psidex.com) · LinkedIn: [dhananiparth](https://linkedin.com/in/dhananiparth) · Email: parth1707ster@gmail.com
 
-Open to senior IC and lead-level remote roles internationally, and India-based roles with technical scope.
+Open to senior IC and lead-level roles — remote international or India-based with technical scope.
