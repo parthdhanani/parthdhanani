@@ -11,6 +11,7 @@ The tools in this repo came out of that pipeline. A freeze bug that took two day
 | **[scorm-kit](https://github.com/parthdhanani/scorm-kit)** | 8 subcommands: lint, a11y, diff, mock, rum, privacy, i18n, cmi5. 27/27 tests. Zero runtime deps. Catches the silent failure modes Storyline's publish step misses. |
 | **[storycraft](https://github.com/parthdhanani/storycraft)** | Markdown storyboard → SCORM 1.2 package. Same input, byte-identical zip. 11/11 tests. [Try it in the browser.](https://psidex.com/demos/storycraft/playground.html) |
 | **[xapi-doctor](https://github.com/parthdhanani/xapi-doctor)** | 25-rule xAPI 1.0.3 linter + cmi5 profile. Pings LRS endpoints, validates auth, translates 4xx/5xx into plain English. 17/17 tests. Zero deps. |
+| **[sb-translation-tool](https://github.com/parthdhanani/sb-translation-tool)** | Flask app that pushes translated storyboard text straight into a Storyline 360 `.story` file — Word doc or PPTX in, updated question text out. Born from doing this by hand across six languages. |
 
 ### Writing
 
