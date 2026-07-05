@@ -32,6 +32,6 @@ JavaScript · Node.js · SCORM 1.2 · xAPI 1.0.3 · cmi5 · Articulate Storyline
 
 ### Contact
 
-Portfolio: [psidex.com](https://psidex.com) · LinkedIn: [dhananiparth](https://linkedin.com/in/dhananiparth) · Email: parth1707ster@gmail.com
+Portfolio: [psidex.com](https://psidex.com) · LinkedIn: [dhananiparth](https://linkedin.com/in/dhananiparth) · Email: parth@psidex.com
 
 Open to senior IC and lead-level roles — remote international or India-based with technical scope.
